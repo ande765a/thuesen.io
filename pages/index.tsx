@@ -122,7 +122,7 @@ export default function Home() {
               />
               <AbountDescription>
                 <HighlightingLargeParagraph>
-                  Hi, my name is Anders Thuesen. I'm a software and machine
+                  Hi, my name is Anders Thuesen. I{"'"}m a software and machine
                   learning engineer from Denmark striving to solve large scale
                   problems with <Highlight>empathy and technology</Highlight>.
                 </HighlightingLargeParagraph>
