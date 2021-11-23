@@ -41,8 +41,10 @@ const AboutSection = styled.section`
 `;
 
 const AbountDescription = styled.div`
-  transform: translateY(-5rem);
-  padding: 0 5rem;
+  @media (min-width: 960px) {
+    padding: 0 5rem;
+    transform: translateY(-5rem);
+  }
 `;
 
 const MantraSection = styled.section`
@@ -72,17 +74,21 @@ const AwardsSection = styled.section``;
 const AwardsDescription = styled.div``;
 
 const Awards = styled.div`
-  padding: 2rem 0;
-  padding-bottom: 10rem;
-
-  & article:nth-child(even) {
-    text-align: right;
+  @media (min-width: 960px) {
+    padding: 2rem 0;
+    padding-bottom: 10rem;
+    & article:nth-child(even) {
+      text-align: right;
+    }
   }
 `;
 
 const Award = styled.article`
-  align-self: flex-start;
-  max-height: 250px;
+  margin: 2rem 0;
+  @media (min-width: 960px) {
+    align-self: flex-start;
+    max-height: 250px;
+  }
 `;
 
 const AppearancesSection = styled.section`
@@ -93,13 +99,19 @@ const AppearancesSection = styled.section`
 const CompetenciesSection = styled.section``;
 
 const Competencies = styled.div`
-  display: flex;
-  margin: 0 -2rem;
+  @media (min-width: 960px) {
+    display: flex;
+    margin: 0 -2rem;
+  }
 `;
 
 const Competency = styled.div`
-  flex: 1;
-  padding: 2rem;
+  margin: 2rem 0;
+  @media (min-width: 960px) {
+    flex: 1;
+    padding: 2rem;
+    margin: 0;
+  }
 `;
 
 export default function Home() {
